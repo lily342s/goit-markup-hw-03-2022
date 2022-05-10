@@ -16,6 +16,15 @@ body {
   font-size: 14px;
 }
 
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -77,21 +86,31 @@ body {
 
 /* Основна секція герой */
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  outline: 2px solid teal;
+
   color: var(--white-color);
 
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 .hero {
   background-color: var(--background-hero-color);
+  text-align: center;
 }
 
 /* Button */
 .button {
+  display: inline-block;
+  padding: 10px 32px;
+  min-width: 136px;
+  text-align: center;
+
   color: var(--white-color);
   background-color: var(--accent-color);
 
@@ -105,6 +124,9 @@ body {
   /* align-items: center;
     text-align: center; */
   letter-spacing: 0.06em;
+
+  border-radius: 4px;
+  
 }
 
 /* Section */
@@ -204,6 +226,8 @@ body {
 }
 
 ul {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
