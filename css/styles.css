@@ -75,17 +75,20 @@ p {
 }
 
 /* Логотип сайту */
-.logo {
+.logo.logo-header {
   margin-right: 93px;
   padding-top: 32px;
   padding-bottom: 32px;
+}
 
+.logo {
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
+
 .logo-top {
   color: var(--title-text-color);
 }
@@ -167,7 +170,7 @@ p {
 .button {
   display: inline-block;
   padding: 10px 32px;
-  min-width: 136px;
+  min-width: 200px;
   text-align: center;
 
   /* margin-bottom: 200px; */
@@ -189,9 +192,15 @@ p {
 }
 
 /* Section */
-.section-title {
-  color: var(--title-text-color);
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
+.section-title {
+  margin-bottom: 50px;
+
+  color: var(--title-text-color);
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -204,6 +213,8 @@ p {
 }
 
 .features-title {
+  margin-bottom: 10px;
+
   color: var(--title-text-color);
   font-size: 14px;
   line-height: 1.14;
@@ -211,15 +222,51 @@ p {
   text-transform: uppercase;
 }
 
+.features-item + .features-item {
+    margin-left: 30px;
+}
+
 .features-text {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
-/* Наша команда */
-.team-title {
-  color: var(--title-text-color);
+/* Чим ми займаємося*/
+.work-section {
+  padding-top: 0;
+}
+.work-list {
+  display: flex;
+  justify-content: space-around;
+}
+.work-item + .work-item {
+  margin-left: 30px;
+}
 
+img {
+  display: block;
+  min-width: 100%;
+  height: auto;
+}
+
+/* Наша команда */
+.people {
+  background-color: var(--third-background-color);
+}
+
+.team {
+  display: flex;
+
+}
+
+.team-member + .team-member {
+  margin-left: 30px;
+}
+
+.team-title {
+  padding-bottom: 10px;
+
+  color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -232,14 +279,29 @@ p {
   letter-spacing: 0.03em;
 }
 
-.people {
-  background-color: var(--third-background-color);
+.box-title-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
+
 
 /* Футер */
 .page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.page-footer {
   background-color: var(--background-hero-color);
 }
+
+.address-list {
+  margin-top: 20px;
+}
+
 .address-list .map {
   color: var(--white-color);
 
@@ -251,6 +313,10 @@ p {
 
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.address-item + .address-item {
+  margin-top: 9px;
 }
 
 /* ПОРТФОЛІО */

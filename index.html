@@ -24,7 +24,7 @@
         <!-- CONTAINER NAV -->
         <nav class="container-nav">
           <!--Логотип сайту-->
-          <a href="./" class="logo">Web<span class="logo-top">Studio</span></a>
+          <a href="./" class="logo logo-header">Web<span class="logo-top">Studio</span></a>
 
           <!--Навігація на інші сайти-->
           <ul class="site-nav">
@@ -93,15 +93,21 @@
       </section>
 
       <!--Чим ми займаємося-->
-      <section class="section">
+      <section class="section work-section">
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
-          <ul>
-            <li><img src="./images/pic-1-2.jpg" alt="Руки на клавіатурі" width="370" /></li>
-            <li>
+          <ul class="work-list">
+            <li class="work-item">
+              <img src="./images/pic-1-2.jpg" alt="Руки на клавіатурі" width="370" />
+            </li>
+
+            <li class="work-item">
               <img src="./images/pic-2-2.jpg" alt="Рука тримає телефон" width="370" />
             </li>
-            <li><img src="./images/pic-3-2.jpg" alt="Рука тримає планшет" width="370" /></li>
+
+            <li class="work-item">
+              <img src="./images/pic-3-2.jpg" alt="Рука тримає планшет" width="370" />
+            </li>
           </ul>
         </div>
       </section>
@@ -117,13 +123,17 @@
                 alt="Усміхнений чоловік в окулярах, що схожий на Сергія Лиховиду"
                 width="270"
               />
-              <h3 class="team-title">Ігор Дем'яненко</h3>
-              <p lang="en" class="team-text">Product Designer</p>
+              <div class="box-title-text">
+                <h3 class="team-title">Ігор Дем'яненко</h3>
+                <p lang="en" class="team-text">Product Designer</p>
+              </div>
             </li>
             <li class="team-member">
               <img src="./images/person-2copy.jpg" alt="Усміхнена жінка в окулярах" width="270" />
-              <h3 class="team-title">Ольга Рєпіна</h3>
-              <p lang="en" class="team-text">Frontend Developer</p>
+              <div class="box-title-text">
+                <h3 class="team-title">Ольга Рєпіна</h3>
+                <p lang="en" class="team-text">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-member">
               <img
@@ -131,8 +141,10 @@
                 alt="Усміхнений чоловік в блакитній сорочці"
                 width="270"
               />
-              <h3 class="team-title">Микола Тарасів</h3>
-              <p lang="en" class="team-text">Marketing</p>
+              <div class="box-title-text">
+                <h3 class="team-title">Микола Тарасів</h3>
+                <p lang="en" class="team-text">Marketing</p>
+              </div>
             </li>
             <li class="team-member">
               <img
@@ -140,8 +152,10 @@
                 alt="Усміхнений працівник в окулярах і чорній футболці"
                 width="270"
               />
-              <h3 class="team-title">Михайло Єрмаков</h3>
-              <p lang="en" class="team-text">UI Designer</p>
+              <div class="box-title-text">
+                <h3 class="team-title">Михайло Єрмаков</h3>
+                <p lang="en" class="team-text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -156,9 +170,15 @@
 
         <!--Адреса-->
         <ul class="address-list">
-          <li><a href="https://u.to/r9whHA" class="map">м. Київ, пр-т Лесі Українки, 26</a></li>
-          <li><a href="mailto:info@example.com" class="info">info@example.com</a></li>
-          <li><a href="tel:+380961111111" class="info">+38 096 111 11 11</a></li>
+          <li class="address-item">
+            <a href="https://u.to/r9whHA" class="map">м. Київ, пр-т Лесі Українки, 26</a>
+          </li>
+          <li class="address-item">
+            <a href="mailto:info@example.com" class="info">info@example.com</a>
+          </li>
+          <li class="address-item">
+            <a href="tel:+380961111111" class="info">+38 096 111 11 11</a>
+          </li>
         </ul>
       </div>
     </footer>
