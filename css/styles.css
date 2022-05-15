@@ -6,7 +6,8 @@
   --accent-color: #2196f3;
   --third-background-color: #f5f4fa;
   --footer-address-color: rgba(255, 255, 255, 0.6);
-  --border-bottom-color: #ECECEC
+  --border-bottom-color: #ECECEC;
+  --border-portfolio-color: #EEEEEE
 }
 
 body {
@@ -357,12 +358,8 @@ img {
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
+ 
   background-color: yellow;
-
-  /* flex-basis: calc(100% / 3 - 30px);
-  margin-top: -30px;
-  margin-left: -30px; */
 }
 
 .project-item {
@@ -397,6 +394,9 @@ img {
 
 .project-title-text {
   padding: 20px 24px;
+  border-right: 1px solid var(--border-portfolio-color);
+  border-bottom: 1px solid var(--border-portfolio-color);
+  border-left: 1px solid var(--border-portfolio-color);
 }
 
 ul {
